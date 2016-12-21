@@ -1,0 +1,91 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<fstream.h>
+
+using namespace std;
+
+void main(){
+
+ofstream file;
+
+file.open("test.txt", ios::out);//ye open n save kkardega
+
+//filename<<"this is a test";// ye file me likha jaaega
+
+     int x,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p;
+     char key[17];
+     //cout<<"Enter number of charcters\n";
+     //cin>>x;
+     a=0;b=0;c=0;d=0;e=0;f=0;g=0;h=0;i=0;j=0;k=0;l=0;m=0;n=0;o=0;p=0;
+     for(a=0;a<17;a++)
+        key[a]='\0';
+     a=0;
+     for(a=32;a<=126;a++)
+     {
+       for(b=32;b<=126;b++)
+       {
+         for(c=32;c<=126;c++)
+         {
+           for(d=32;d<=126;d++)
+           {
+             for(e=32;e<=126;e++)
+             {
+               for(f=32;f<=126;f++)
+               {
+                 for(g=32;g<=126;g++)
+                 {
+                   for(h=32;h<=126;h++)
+                   {
+                     for(i=32;i<=126;i++)
+                     {
+                       for(j=32;j<=126;j++)
+                       {
+                         for(k=32;k<=126;k++)
+                         {
+                           for(l=32;l<=126;l++)
+                           {
+                             for(m=32;m<=126;m++)
+                             {
+                               for(n=32;n<=126;n++)
+                               {
+                                 for(o=32;o<=126;o++)
+                                 {
+                                   for(p=32;p<=126;p++)
+                                   {
+                                       key[0]=(char)p;
+                                       cout<<key<<endl;
+					filename<<key<<endl;
+                                   }
+                                   key[1]=o;
+                                 }
+                                 key[2]=n;
+                               }
+                               key[3]=m;
+                             }
+                             key[4]=l;
+                           }
+                           key[5]=k;
+                         }
+                         key[6]=j;
+                       }
+                       key[7]=i;
+                     }
+                     key[8]=h;
+                   }
+                   key[9]=g;
+                 }
+                 key[10]=f;
+               }
+               key[11]=e;
+             }
+             key[12]=d;
+           }
+           key[13]=c;
+         }
+         key[14]=b;
+       }
+       key[15]=a;
+     }
+     getch();
+}
